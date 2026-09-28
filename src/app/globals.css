@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --titanium-dark: #0c0d10;
+    --carbon-surface: #141720;
+    --aero-cyan: #38bdf8;
+    --gold-supersonic: #f59e0b;
+    --stealth-border: #232838;
+  }
+
+  body {
+    background-color: var(--titanium-dark);
+    color: #e2e8f0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+}
+
+/* #32 Single-Page Aerodynamic Luxury Jet Styling */
+.aerodynamic-card {
+  background: linear-gradient(135deg, #131620 0%, #0d0f15 100%);
+  border: 1px solid rgba(56, 189, 248, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  transition: all 0.25s ease-out;
+}
+.aerodynamic-card:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  box-shadow: 0 12px 36px rgba(56, 189, 248, 0.12);
+  transform: translateY(-2px);
+}
+
+.cyan-hud-glow {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+.radar-grid {
+  background-image: 
+    linear-gradient(rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
